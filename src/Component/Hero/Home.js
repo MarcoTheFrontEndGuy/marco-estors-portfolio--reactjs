@@ -4,7 +4,7 @@ import hero from '../pic/hero.png'
 import skill1 from '../pic/skill1.png'
 import skill2 from '../pic/skill2.png'
 import skill3 from '../pic/skill3.png'
-import { Typewriter, useTypewriter, Cursor } from 'react-simple-typewriter'
+import { Typewriter } from 'react-simple-typewriter'
 
 
 const Home = () => {
@@ -56,6 +56,11 @@ const Home = () => {
                            </button>
 
                      </div>
+                  </div>
+               </div>
+               <div className="right">
+                  <div className="right_img">
+                     <img src={hero} alt="" />
                   </div>
                </div>
             </div>
