@@ -3,10 +3,10 @@ import './Header.css'
 import logo from '../pic/logo.png'
 const Header = () => {
 // when scroll header at top 
-   window.addEventListener("scroll", function() {
-      const header = document.querySelector(".header");
-      header.classList.toggle("active", window.scrollY > 100)
-   })
+   // window.addEventListener("scroll", function() {
+   //    const header = document.querySelector(".header");
+   //    header.classList.toggle("active", window.scrollY > 100)
+   // })
 
    // toggle menu 
    const [Mobile, setMobile] = useState(false);
