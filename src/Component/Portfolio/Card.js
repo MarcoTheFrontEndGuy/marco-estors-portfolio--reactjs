@@ -51,10 +51,10 @@ const Card = (props) => {
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi laudantium ipsa quo quia eius!</p>
             <div className="button f_flex mtop">
                <button className="btn_shadow">
-                  LIKE THIS <i className="far fa-thumbs-up"></i>
+                  GitHub <i className="far fa-thumbs-up"></i>
                </button>
                <button className="btn_shadow">
-                  VIEW PROJECT <i className="fas fa-chevron-right"></i>
+                  Go Live <i className="fas fa-chevron-right"></i>
                </button>
             </div>
             <button className="close-modal btn_shadow" onClick={toggleModal}>
