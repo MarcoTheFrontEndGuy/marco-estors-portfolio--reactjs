@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './Header.css'
+import './HeaderMarco.css'
 import logo from '../pic/marco-profile-picture.png'
 const Header = () => {
 // when scroll header at top 
@@ -15,13 +15,16 @@ const Header = () => {
     <>
       <header className="header">
          {/* <div className="container d_flex"> */}
-            <div className="logo">
-               <img src={logo} alt="" />
+            <div className="header__logo">
+               <span className="header__logo__myName">Marco Estors</span>
+               {/* <span className="header__logo__myJob">Front End Developer</span> */}
             </div>
 
-            <div className="navlink">
+            <nav className="header__nav">
                
-               <ul className={Mobile ? "nav-links-mobile" : "link f_flex uppercase "} onClick={() => setMobile(false)}   >
+               <ul className={Mobile ? "header__nav__ul-mobile" : "header__nav__ul"} onClick={() => setMobile(false)}   >
+
+               {/* <ul className={Mobile ? "nav-links-mobile" : "link f_flex uppercase "} onClick={() => setMobile(false)}   > */}
                   <li>
                      <a href="#home">home</a>
                   </li>
@@ -39,16 +42,21 @@ const Header = () => {
                   <li>
                      <a href="#contact">contact</a>
                   </li>
-                  <li>
+                  {/* <li>
                      <button className="home-btn">BUY NOW</button>
-                  </li>
+                  </li> */}
                </ul>
                
-               <button className="toggle" onClick={() => setMobile(!Mobile)}>
+               {/* <button className="toggle" onClick={() => setMobile(!Mobile)}>
                   {Mobile ? <i className="fas fa-times close home-btn"></i> 
                           : <i className="fas fa-bars open"></i> }
-               </button>
-            </div>
+               </button> */}
+
+               <button className="toggle" onClick={() => setMobile(!Mobile)}>
+                  {Mobile ? <i className="fas fa-times close"></i> 
+                          : <i className="fas fa-bars open"></i> }
+               </button> 
+            </nav>
          {/* </div> */}
       </header>
        

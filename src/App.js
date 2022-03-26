@@ -1,5 +1,6 @@
 import React from 'react'
-import Header from './Component/Head/Header'
+// import Header from './Component/Head/Header'
+import HeaderMarco from './Component/HeadMarco/HeaderMarco'
 import Home from './Component/Hero/Home'
 import './App.css'
 import Features from './Component/Features/Features'
@@ -10,8 +11,9 @@ import Footer from './Component/Footer'
 import ContactMarco from './Component/Contact/ContactMarco'
 const App = () => {
   return (
-    <div>
-      <Header />
+    <>
+      {/* <Header /> */}
+      <HeaderMarco />
       <Home />
       <Features />
       <Portfolio />
@@ -19,7 +21,7 @@ const App = () => {
       {/* <Contact /> */}
       <ContactMarco />
       <Footer />
-    </div>
+    </>
   )
 }
 
