@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './HeaderMarco.css'
-import logo from '../pic/marco-profile-picture.png'
+// import logo from '../pic/marco-profile-picture.png'
 const Header = () => {
 // when scroll header at top 
    // window.addEventListener("scroll", function() {
@@ -22,7 +22,8 @@ const Header = () => {
 
             <nav className="header__nav">
                
-               <ul className={Mobile ? "header__nav__ul-mobile" : "header__nav__ul"} onClick={() => setMobile(false)}   >
+               {/* <ul className={Mobile ? "header__nav__ul-mobile" : "header__nav__ul"} onClick={() => setMobile(false)}   > */}
+               <ul className={Mobile ? "header__nav__ul header__nav__ul-mobile" : "header__nav__ul"} onClick={() => setMobile(false)}   >
 
                {/* <ul className={Mobile ? "nav-links-mobile" : "link f_flex uppercase "} onClick={() => setMobile(false)}   > */}
                   <li>

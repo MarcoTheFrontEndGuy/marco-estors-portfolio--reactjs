@@ -1,11 +1,7 @@
 .header {
-   /* height: 10vh; */
-   /* line-height: 10vh; */
-   /* height: 50px; */
    padding: 20px;
    display: flex; 
    justify-content: space-between;
-   /* border-bottom: 1px dotted black; */
 }
 
 .logo {
@@ -20,6 +16,13 @@
    display: flex;
    justify-content: space-between;
    text-transform: uppercase;
+}
+
+.header__nav__ul {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   margin-right: 20px;
 }
 
 header ul li {
@@ -57,23 +60,11 @@ header ul li a:hover {
    display: none;
 }
 
-.header.active {
-   height: 12vh;
-   position: fixed;
-   top: 0;
-   z-index: 1000;
-   width: 100%;
-   background-color: #ecf0f3;
-   box-shadow: -1px 11px 24px -11px rgba(0,0,0,0.75);
-   transition: 0.5s;
-}
 
 @media (max-width: 768px) {
    .header {
-      height: 30px;
       height: auto;
       padding: 15px;
-      /* background-color: rgb(218, 83, 83); */
    }
 
    .header__logo {
@@ -86,10 +77,9 @@ header ul li a:hover {
       color: rgb(0, 0, 0);
       display: inline-block;
       padding: 5px 5px 0 0;
-      font-size: 8vw;
       font-size: 20px;
       font-weight: bold;
-      font-family: 'La Belle Aurore', cursive;
+      /* font-family: 'La Belle Aurore', cursive; */
   }
 
 
@@ -103,21 +93,35 @@ header ul li a:hover {
    }
 
    .header__nav__ul {
-      display: none;
+      /* display: none; */
    }
 
-   .header__nav__ul-mobile{
-      position: absolute;
-      display: block;
-      list-style: none;
-      box-shadow: rgba(50,50,93,0.23) 0 50px 100px -20px, rgba(0,0,0,0.3) 0 30px 60px -30px;
-      left: 0;
-      top: 0;
-      transition: all 0.5s ease-in-out;
-      width: 60%;
+   .header__nav__ul {
+      width: 120px;
       height: 100vh;
-      background-color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-right: 20px;
+      background-color: rgb(214, 213, 213);
+      position: absolute;
+      top: 0; 
+      left: -120px;
+      transition: all .2s;
+      box-shadow: rgba(50,50,93,0.43) 0 50px 100px -20px, rgba(0,0,0,0.6) 0 30px 60px -30px;
+      background-color: #ECF0F3;
       z-index: 888;
+   }
+
+   .header__nav__ul li {
+      margin-bottom: 20px;
+   }
+ 
+   .header__nav__ul-mobile{
+      /* box-shadow: rgba(50,50,93,0.43) 0 50px 100px -20px, rgba(0,0,0,0.6) 0 30px 60px -30px; */
+      left: 0px;
+      /* background-color: #ECF0F3; */
+      /* z-index: 888; */
    }
    
    header ul li {
