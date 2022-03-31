@@ -1,7 +1,8 @@
 const data = [
   {
     id: 1,
-    image: "https://img.icons8.com/ios/64/000000/menu.png",
+    // image: "https://img.icons8.com/ios/64/000000/menu.png",
+    image: './my-icons/photoshop.svg',
     title: "Business Stratagy",
     desc: "I throw myself down among the tall grass by the stream as I lie close to the earth.",
   },

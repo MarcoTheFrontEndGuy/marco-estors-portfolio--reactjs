@@ -1,14 +1,10 @@
 import React, { useState } from 'react'
 import './HeaderMarco.css'
-const Header = () => {
-// when scroll header at top 
-   // window.addEventListener("scroll", function() {
-   //    const header = document.querySelector(".header");
-   //    header.classList.toggle("active", window.scrollY > 100)
-   // })
 
-   // toggle menu 
-   const [Mobile, setMobile] = useState(false);
+const Header = () => {
+
+// toggle menu 
+ const [Mobile, setMobile] = useState(false);
 
   return (
     <>

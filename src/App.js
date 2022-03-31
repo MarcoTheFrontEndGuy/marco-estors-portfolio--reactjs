@@ -9,17 +9,15 @@ import Footer from './Component/Footer'
 import ContactMarco from './Component/Contact/ContactMarco'
 import FeaturesMarco from './Component/FeaturesMarco/FeaturesMarco'
 import PORTFOLIO_NEW_ONE from './Component/PortfolioNewOne/PORTFOLIO_NEW_ONE'
-// import Responsive_Fonts from './Component/RESPONSIVE_FONTS/Responsive_Fonts'
 // import Work from './Component/Work/Work'
 const App = () => {
   return (
     <>
-      {/* <Responsive_Fonts /> */}
-
       <HeaderMarco />
       <Home />
       <FeaturesMarco />
       <PORTFOLIO_NEW_ONE />
+      {/* <PORTFOLIO_NEW_ONE /> */}
       {/* <Portfolio /> */}
       {/* <Work /> */}
       <Resume />
