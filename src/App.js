@@ -1,24 +1,28 @@
 import React from 'react'
-// import Header from './Component/Head/Header'
 import HeaderMarco from './Component/HeadMarco/HeaderMarco'
 import Home from './Component/Hero/Home'
 import './App.css'
-import Features from './Component/Features/Features'
+import './App_Typography.css'
 import Portfolio from './Component/Portfolio/Portfolio'
 import Resume from './Component/Resume/Resume'
-// import Contact from './Component/Contact/Contact'
 import Footer from './Component/Footer'
 import ContactMarco from './Component/Contact/ContactMarco'
+import FeaturesMarco from './Component/FeaturesMarco/FeaturesMarco'
+import PORTFOLIO_NEW_ONE from './Component/PortfolioNewOne/PORTFOLIO_NEW_ONE'
+// import Responsive_Fonts from './Component/RESPONSIVE_FONTS/Responsive_Fonts'
+// import Work from './Component/Work/Work'
 const App = () => {
   return (
     <>
-      {/* <Header /> */}
+      {/* <Responsive_Fonts /> */}
+
       <HeaderMarco />
       <Home />
-      <Features />
-      <Portfolio />
+      <FeaturesMarco />
+      <PORTFOLIO_NEW_ONE />
+      {/* <Portfolio /> */}
+      {/* <Work /> */}
       <Resume />
-      {/* <Contact /> */}
       <ContactMarco />
       <Footer />
     </>

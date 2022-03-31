@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import niceCar from '../../images/nice-car-demo-image-portfolio.jpg'
+import imageTECH from '../pic/imageTECH.jpg'
 
-const Card = (props) => {
+const PortfolioCard = (props) => {
  const [modal, setModal] = useState(false)
 
  const toggleModal = () => {
@@ -16,11 +17,12 @@ const Card = (props) => {
 
   return (
    <>
-   <div className="box btn_shadow" >
-      <div className="img">
-         {/* <img src={props.image} alt="" /> -- I should use this */}
-         <img src={niceCar} alt="" onClick={toggleModal} />  {/* I use this for testing */}
-      </div>
+   {/* <div className="box btn_shadow" > */}
+   <section className="portfolio__card" >
+      <header className="portfolio__card__header">
+         {/* <img src={niceCar} alt="" onClick={toggleModal} />  I use this for testing */}
+         <img src={imageTECH} alt="" />
+      </header>
       <div className="category d_flex">
          <span onClick={toggleModal} >{props.category}</span>
          <label>
@@ -34,7 +36,7 @@ const Card = (props) => {
             <i className="fas fa-arrow-right"></i>
          </a>
       </div>
-   </div>
+   </section>
 
    { /*POPUP BOX */}
    {modal && (
@@ -69,4 +71,4 @@ const Card = (props) => {
   )
 }
 
-export default Card
+export default PortfolioCard

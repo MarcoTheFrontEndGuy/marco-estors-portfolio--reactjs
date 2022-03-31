@@ -13,12 +13,12 @@ const Home = () => {
          <section className="hero" id="home">
                <div className="hero__left">
                 
-                  <h1>I'm a Front End Developer</h1>
+                  <h1 className="hero__left__h1">I'm a Front End Developer</h1>
 
 
-                  <h2>{`{ /* WELCOME TO MY WORLD */ }`}</h2>
+                  <h2 className="hero__left__h2">{`{ /* WELCOME TO MY WORLD */ }`}</h2>
                
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus accusamus hic optio est voluptatibus voluptates ut!</p>
+                  <p className="hero__left__p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus accusamus hic optio est voluptatibus voluptates ut!</p>
                   {/* <div className="no-class-yet"> */}
                   <div className="hero__left__social-group">
                      <button className="btn_shadow">

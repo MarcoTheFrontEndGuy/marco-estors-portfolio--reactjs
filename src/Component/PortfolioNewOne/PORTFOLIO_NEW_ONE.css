@@ -1,0 +1,128 @@
+* {
+   border: 0;
+   padding: 0;
+   margin: 0;
+}
+
+.portfolio {
+   margin-top: 80px;
+   padding: 40px 10%;
+}
+
+.portfolio__header{
+    margin-top: 2vw;
+}
+
+.portfolio__projects {
+   margin: auto;
+   margin-top: 60px;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 20px;
+}
+
+.portfolio__project {
+   padding: 2vw;
+   border-radius: 6px;
+   transition: all .3s ease-in-out;
+   background: linear-gradient(145deg, #e2e8ec, #ffffff);
+   box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
+   color: #222;
+}
+
+.portfolio__project:hover {
+   background: #ff014f;
+   color: white;
+   transform: translateY(-10px);
+}
+
+.portfolio__project:hover .portfolio__project__buttons a {
+   box-shadow: 0 0 0 transparent;
+}
+
+.portfolio__project__header__img {
+   width: 100%;
+   height: 200px;
+   background-color: #000000;
+}
+
+.portfolio__project__header img {
+   max-width: 100%;
+   object-fit: cover;
+}
+
+.portfolio__project__buttons{
+   display: flex;
+}
+
+
+.portfolio__project__buttons a {
+   text-align: center;
+   flex: 1;
+   font-size: 28px;
+   line-height: 7px;
+}
+
+
+
+
+/* .portfolio__project__buttons__icon {
+
+   color: magenta;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   box-shadow: 1px 0px 2px #ccc;
+   margin-right: 20px;
+   padding: 40px;
+}  */
+
+.portfolio__project__buttons__icon {
+   color: white;
+   /* border: 2px solid #ccc; */
+   border-radius: 4px;
+   box-shadow: 2px 2px 2px 1px #ccc;
+   /* background-color: #FF014F; */
+   margin-right: 20px;
+   /* padding: 0px; */
+   width: 40px;
+   fill: #ff014f;
+   height: 40px;
+   font-size: 30px;
+}
+
+.portfolio__project:hover .portfolio__project__buttons__icon {
+   color: black;
+   fill: #fff;
+   box-shadow: none;
+}
+
+
+
+@media (max-width: 992px) {
+   .portfolio__projects {
+      margin: auto;
+      margin-top: 60px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+  }
+
+}
+
+@media (max-width: 768px) {
+   .portfolio__project {
+      padding: 15px;
+   }
+   
+   .portfolio__project__buttons {
+      flex-direction: column;
+    }
+
+   .portfolio__project__buttons a:nth-child(1) {
+      margin-right: 0px;
+   }
+   
+   .portfolio__project__buttons a:nth-child(2) {
+      margin-left: 0px;
+   }
+}
