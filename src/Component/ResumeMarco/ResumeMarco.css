@@ -25,24 +25,58 @@
    font-size: 40px;
 }
 
+.resumeCard {
+   padding: 20px;
+   background: #ebf0f3;
+   color: #000000;
+   border-radius: 6px;
+   margin: 40px 0;
+   box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
+   transition: all .3s;
+}
+
+.resumeCard:hover {
+   background: rgb(193, 193, 252);
+   animation: scaleCourseCard .5s ease-in-out;
+}
+
+@keyframes scaleCourseCard {
+   0% {
+      transform: rotate(-1deg);
+   }
+   40% {
+      transform: rotate(1deg);
+   }
+   80% {
+      transform: rotate(0deg);
+   }
+   100% {
+      transform: rotate(0deg);
+   }
+}
+
+
+.resumeCard__header__title {
+   margin-bottom: 20px;
+}   
+
 .resumeCard__header__title__h4 {
    font-size: 1.8vw;
    display: inline-block;
-   padding: 10px 20px;
-   background: white;
-   box-shadow: 10px 0px 20px #ccc;
-   margin-bottom: 30px;
+   padding: 10px 20px 10px 0px;
+   font-family: serif;
 }
 
 .resume__content__left {
-   padding: 40px;
+   padding: 26px;
    border-bottom: 1px solid #e3e9ed;
 }
 
-.resumeCard__description{
+.resumeCard__description {
    font-size: 18px;
    transition: 0.5s;
+   line-height: 1.4;
+   font-family: serif;
 }
-
 
 

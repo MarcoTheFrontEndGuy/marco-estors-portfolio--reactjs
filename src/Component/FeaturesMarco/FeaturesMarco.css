@@ -38,7 +38,8 @@
 }
 
 .features__content .feature:hover {
-   background: #085D96;
+   /* background: #085D96; */
+   background: #5A93B9;
    color: white;
    transform: translateY(-10px);
 }
