@@ -76,7 +76,8 @@ small, .text_small { font-size: 0.75rem;
 
 .portfolio__project__header__h4 {
    font-size: 18px;
-   color: #898b8f;
+   /* color: #898b8f; */
+   color: #4AC3FF;
 }
 
 

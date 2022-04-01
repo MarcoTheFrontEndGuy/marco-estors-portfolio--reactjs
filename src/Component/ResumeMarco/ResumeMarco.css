@@ -25,6 +25,17 @@
    font-size: 40px;
 }
 
+/* .resumeCard {
+   padding: 20px;
+   background: #ebf0f3;
+   color: #000000;
+   border-radius: 6px;
+   margin: 40px 0;
+   box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
+   transition: transform .3s;
+} */
+
+
 .resumeCard {
    padding: 20px;
    background: #ebf0f3;
@@ -32,13 +43,28 @@
    border-radius: 6px;
    margin: 40px 0;
    box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
-   transition: all .3s;
+   transition: transform .3s;
+   border: 10px solid #ebf0f3;
 }
 
+
+
+
+
 .resumeCard:hover {
-   background: rgb(193, 193, 252);
-   animation: scaleCourseCard .5s ease-in-out;
+   /* background: rgb(193, 193, 252); */
+   background: #5A93B9;
+   animation: scaleCourseCard .5s ease-in-out .5s;
 }
+
+.resumeCard__description {
+   color: rgb(0, 0, 0);
+   transition: 0s;
+}
+
+/* .resumeCard:hover .resumeCard__description {
+   color: #fff;
+} */
 
 @keyframes scaleCourseCard {
    0% {
@@ -65,6 +91,10 @@
    display: inline-block;
    padding: 10px 20px 10px 0px;
    font-family: serif;
+}
+
+.resumeCard:hover .resumeCard__header__title__h4 {
+   color: #4AC3FF;
 }
 
 .resume__content__left {
