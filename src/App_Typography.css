@@ -68,7 +68,6 @@ small, .text_small { font-size: 0.75rem;
 
 .hero__left__p {
    color: #878e99;
-   /* font-size: 18px; */
    line-height: 30px;
    width: 90%;
    margin-top: 2vw;
@@ -76,8 +75,8 @@ small, .text_small { font-size: 0.75rem;
 }
 
 .portfolio__project__header__h4 {
-   font-size: 20px;
-   /* color: blue; */
+   font-size: 18px;
+   color: #898b8f;
 }
 
 

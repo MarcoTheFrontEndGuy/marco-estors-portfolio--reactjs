@@ -34,8 +34,7 @@
 }
 
 .portfolio__project:hover {
-   background: #ff014f;
-   /* background: #880988; */
+   background: #085D96;
    color: white;
    transform: translateY(-10px);
 }
@@ -43,41 +42,36 @@
 .portfolio__project:hover .portfolio__project__buttons a {
    box-shadow: 0 0 0 transparent;
 }
+
 .portfolio__project__header__image {
    width: 100%;
-   /* height: 200px; */
-   /* background-color: #000000; */
-   /* background-color: magenta; */
 }
 
 .portfolio__project:hover .portfolio__project__header__image {
    width: 100%;
-
-   /* background-color: magenta; */
 }
 
 .portfolio__project__header img {
    max-width: 100%;
    object-fit: cover;
-   /* opacity: .5; */
+   opacity: .5;
 }
 
 .portfolio__project__buttons{
-   margin-top: 20px;
+   margin-top: 40px;
    display: flex;
+   justify-content: space-around;
 }
 
 /* this a is a button and it wraps the button icon  */
 .portfolio__project__buttons a {
    text-align: center;
-   flex: 1;
-   /* font-size: 28px; */
+   /* flex: 1; */
+   width: 40px;
+   height: 40px;
    font-size: 20px;
    line-height: 7px;
 }
-
-
-
 
 
 /* this is the svg icon inside the button  */
@@ -86,26 +80,16 @@
 .portfolio__project__buttons__icon {
    color: white;
    border-radius: 4px;
-   box-shadow: 2px 2px 2px 1px #ccc;
-   margin-right: 20px;
-   width: 30px;
-   height: 30px;
-   /* padding: 10px; */
-   /* width: 50px;
-   height: 50px;
-   padding: 14px; */
-   fill: #767474;
+   width: 27px;
+   height: 27px;
+   fill: #c0c0c0;
 }
-
-
-
 
 .portfolio__project:hover .portfolio__project__buttons__icon {
    color: black;
    fill: #fff;
    box-shadow: none;
 }
-
 
 
 @media (max-width: 992px) {

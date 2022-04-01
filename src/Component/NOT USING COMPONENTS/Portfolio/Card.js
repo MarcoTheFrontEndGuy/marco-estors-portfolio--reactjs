@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import niceCar from '../../images/nice-car-demo-image-portfolio.jpg'
-import imageTECH from '../pic/imageTECH.jpg'
+import imageTECH from '../pic/imageTECH.svg'
 
 const PortfolioCard = (props) => {
  const [modal, setModal] = useState(false)
