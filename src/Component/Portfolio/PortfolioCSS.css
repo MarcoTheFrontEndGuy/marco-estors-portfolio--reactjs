@@ -1,0 +1,162 @@
+* {
+   border: 0;
+   padding: 0;
+   margin: 0;
+}
+
+.portfolio {
+   margin-top: 80px;
+   padding: 40px 10%;
+}
+
+.portfolio__header{
+    margin-top: 2vw;
+}
+
+.portfolio__projects {
+   margin: auto;
+   margin-top: 60px;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 20px;
+}
+
+.portfolio__project {
+   padding: 2vw;
+   border-radius: 6px;
+   transition: all .3s ease-in-out;
+   background: linear-gradient(145deg, #e2e8ec, #ffffff);
+   box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
+   color: #222;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.portfolio__project:hover {
+   /* background: #085D96; */
+   background: #5A93B9;
+   color: white;
+   transform: translateY(-10px);
+}
+
+
+.portfolio__project:hover .portfolio__project__buttons a {
+   box-shadow: 0 0 0 transparent;
+}
+
+.portfolio__project__header__image {
+   width: 100%;
+}
+
+.portfolio__project:hover .portfolio__project__header__image {
+   width: 100%;
+   overflow: hidden;
+}
+
+.portfolio__project__header img {
+   max-width: 100%;
+   object-fit: cover;
+   opacity: .5;
+   /* transition: all .4s; */
+   transition: all .2s ease-in-out; 
+
+}
+
+.portfolio__project:hover .portfolio__project__header img {
+   max-width: 100%;
+   object-fit: cover;
+   /* opacity: .5; */
+   opacity: 1;
+}
+
+.portfolio__project__buttons{
+   margin-top: 40px;
+   display: flex;
+   justify-content: space-around;
+}
+
+/* this a is a button and it wraps the button icon  */
+.portfolio__project__buttons a {
+   text-align: center;
+   /* flex: 1; */
+   width: 40px;
+   height: 40px;
+   font-size: 20px;
+   line-height: 7px;
+}
+
+
+/* this is the svg icon inside the button  */
+/* the size of the svg is full width + height  */
+/* svg icon with padding  = shrinks the svg  */
+.portfolio__project__buttons__icon {
+   color: white;
+   border-radius: 4px;
+   width: 27px;
+   height: 27px;
+   fill: #c0c0c0;
+}
+
+.portfolio__project:hover .portfolio__project__buttons__icon {
+   color: black;
+   fill: #fff;
+   box-shadow: none;
+}
+
+/* PORTFOLIO CARD 1 DEFAULT STYLING ================================= */
+.portfolioCard1Styling {
+   background: #5A93B9;
+   color: white;
+}
+
+.portfolioCard1Styling >.portfolio__project__header .portfolio__project__header__image {
+   width: 100%;
+}
+
+.portfolioCard1Styling .portfolio__project__header img {
+   max-width: 100%;
+   object-fit: cover;
+   /* opacity: .5; */
+   opacity: 1;
+}
+.portfolioCard1Styling > .portfolio__project__buttons .portfolio__project__buttons__icon {
+   color: black;
+   fill: #fff;
+   box-shadow: none;
+}
+
+.portfolioCard1Styling > .portfolio__project__buttons .portfolio__project__buttons__icon a {
+   box-shadow: 0 0 0 transparent;
+}
+/* end PORTFOLIO CARD 1 DEFAULT STYLING ================================= */
+
+
+@media (max-width: 992px) {
+   .portfolio__projects {
+      margin: auto;
+      margin-top: 60px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+  }
+
+}
+
+@media (max-width: 768px) {
+   .portfolio__project {
+      padding: 15px;
+   }
+   
+   .portfolio__project__buttons {
+      flex-direction: column;
+    }
+
+   .portfolio__project__buttons a:nth-child(1) {
+      margin-right: 0px;
+   }
+   
+   .portfolio__project__buttons a:nth-child(2) {
+      margin-left: 0px;
+   }
+}

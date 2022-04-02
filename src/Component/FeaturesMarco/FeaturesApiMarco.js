@@ -2,7 +2,8 @@ const data = [
    {
      id: 1,
       image: "https://raw.githubusercontent.com/MarcoTheFrontEndGuy/marco-estors-portfolio--reactjs/45ca0ed6e17a79f7388d90c685a9f0948ea2f9f6/images/figma.svg",
-     title: "Photoshop/Figma",
+    //  title: "Photoshop/Figma",
+     title: "PSD/Figma",
      desc: "In photoshop I can do multiple things, pen tool, remove background, save images for web",
    },
    {

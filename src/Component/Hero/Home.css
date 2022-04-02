@@ -9,54 +9,12 @@
    min-height: calc((100vh - 7.80vh) - 50px);
 }
 
-/* .hero__left__h1 {
-   color: #333;
-   font-size: 60px;
-   font-size: 5.4vw;
-} */
-
-/* .hero__left__h2{
-   font-weight: 100;
-   letter-spacing: 2px;
-} */
-
-/* .hero__left__h1 span {
-   font-size: 3.4vw;
-   color: #ff014f;
-} */
-
-/* .hero__left__h2 {
-   font-size: 2.4vw;
-   color: #ff014f;
-} */
-
-/* .hero__left__h2 span {
-   color: #000000;
-} */
-
-/* .hero__left__p {
-   color: #878e99;
-   font-size: 18px;
-   line-height: 30px;
-   width: 90%;
-   margin-top: 2vw;
-   margin-bottom: 2vw;
-} */
-
 .hero__left__social-group {
    display: block;
 }
 
 .hero_btn {
    margin-top: 20%;
-}
-
-.btn_shadow {
-   border: 1px solid #ccc;
-   border-radius: 4px;
-   box-shadow: 1px 0px 2px #ccc;
-   margin-right: 20px;
-   padding: 20px 28px;
 }
 
 .hero_btn h4 {
@@ -73,6 +31,7 @@
 
 .hero_btn i {
    font-size: 20px;
+   background: #5A93B9;
 }
 
 .hero_btn button img {
@@ -108,9 +67,9 @@
 
 
 @media (max-width: 1066px) {
-   .hero__left__h1 {
-      /* font-size: 5vw; */
-   }
+   /* .hero__left__h1 {
+      font-size: 5vw;
+   } */
 }
 /* ========================================================================================== */
 /* ========================================================================================== */
@@ -135,14 +94,12 @@
   }
 
    .hero__left__h1 span {
-   /* .hero h1 span { */
       color: #ff014f;
       display: block;
       margin-bottom: 15px;
   }
   
   .hero__left__p {
-  /* .hero p { */
       color: #878e99;
       font-size: 16px;
       margin-top: 0;

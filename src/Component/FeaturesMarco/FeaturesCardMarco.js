@@ -11,13 +11,12 @@ const FeaturesCard = (props) => {
         </header>
         <p>{props.desc}</p>
 
-         {/* <a href="">
-            <i className="fas fa-arrow-right"></i>
-         </a> */}
       </section>
     </>
   )
 }
+
+
 
 export default FeaturesCard
 

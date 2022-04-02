@@ -6,11 +6,9 @@
    margin-top: 12.70vh;
    display: flex;
    flex-direction: column;
-   /* padding: 0 0 50px 0; */
 }
 
 .features__header {
-   /* padding: 0 10%; */
    padding: 0 5%;
 }
 
@@ -37,12 +35,17 @@
    color: #222;
 }
 
+.features__content .feature.firstSectionElement {
+   background: #5A93B9;
+   color: white;
+}
+
 .features__content .feature:hover {
-   /* background: #085D96; */
    background: #5A93B9;
    color: white;
    transform: translateY(-10px);
 }
+
 
 .feature__header__img {
    width: 20%;
@@ -87,7 +90,6 @@
       background-color: #e5e5e5;
       flex: 1 1 200px;
       width: 90%;
-      /* margin: auto; */
    }
    
 }

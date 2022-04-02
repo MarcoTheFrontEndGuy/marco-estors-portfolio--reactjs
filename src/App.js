@@ -7,7 +7,8 @@ import ResumeMarco from './Component/ResumeMarco/ResumeMarco'
 import Footer from './Component/Footer'
 import ContactMarco from './Component/Contact/ContactMarco'
 import FeaturesMarco from './Component/FeaturesMarco/FeaturesMarco'
-import PORTFOLIO_NEW_ONE from './Component/PortfolioNewOne/PORTFOLIO_NEW_ONE'
+import PORTFOLIO from './Component/Portfolio/PORTFOLIO'
+import PortfolioComponent from './Component/Portfolio/PortfolioComponent'
 
 
 const App = () => {
@@ -16,8 +17,8 @@ const App = () => {
       <HeaderMarco />
       <Home />
       <FeaturesMarco />
-      <PORTFOLIO_NEW_ONE />
-      <hr />
+      {/* <PORTFOLIO /> */}
+      <PortfolioComponent />
       <ResumeMarco />
       <ContactMarco />
       <Footer />

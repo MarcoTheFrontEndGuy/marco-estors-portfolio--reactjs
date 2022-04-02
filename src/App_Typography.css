@@ -84,6 +84,11 @@ small, .text_small { font-size: 0.75rem;
 
 .features  h2 {  margin: 20px 0 20px 0;  }
 
+
+.resume__header__h2 {
+   margin-top: 80px;
+}
+
 @media (max-width: 1111px) {
    .feature__header__h4 {
       font-size: 20px;

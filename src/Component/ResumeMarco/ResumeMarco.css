@@ -52,9 +52,11 @@
 
 
 .resumeCard:hover {
-   /* background: rgb(193, 193, 252); */
-   background: #5A93B9;
-   animation: scaleCourseCard .5s ease-in-out .5s;
+   /* background: #5A93B9; */
+   /* border-color: #4AC3FF; */
+   /* border-color: #5A93B9; */
+
+   animation: scaleCourseCard .5s ease-in-out;
 }
 
 .resumeCard__description {
@@ -86,15 +88,24 @@
    margin-bottom: 20px;
 }   
 
+/* .resumeCard__header__title__h4 {
+   font-size: 1.8vw;
+   display: inline-block;
+   padding: 10px 20px 10px 0px;
+   font-family: serif;
+} */
+
 .resumeCard__header__title__h4 {
    font-size: 1.8vw;
    display: inline-block;
    padding: 10px 20px 10px 0px;
    font-family: serif;
+   border-bottom: 3px solid black;
+   margin-bottom: 10px;
 }
 
 .resumeCard:hover .resumeCard__header__title__h4 {
-   color: #4AC3FF;
+   /* color: #4AC3FF; */
 }
 
 .resume__content__left {
