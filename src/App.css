@@ -18,6 +18,28 @@ body {
   max-width: 1400px;
 }
 
+body::-webkit-scrollbar {
+  width: 20px;
+  width: 15px;
+}
+
+body::-webkit-scrollbar-track {
+  /* width: 10px; */
+  color: red;
+  background-color: #416a85;
+  border: 2px solid green;
+  padding: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+  width: 100px;
+  color: red;
+  background-color: black;
+  background-color: #5A93B9;
+  border: 2px solid #416a85;
+  padding: 5px;
+}
+
 body * {
   text-decoration: none;
   list-style-type: none;
