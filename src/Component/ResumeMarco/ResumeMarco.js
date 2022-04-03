@@ -12,10 +12,10 @@ const ResumeMarco = () => {
           </header>
           <div className="resume__content">
              <section className="resume__content__left">
-                <div className="heading">
+                {/* <div className="heading">
                    <h4>YEARS</h4>
                    <h5>Education</h5>
-                </div>
+                </div> */}
                 <div className="content">
                    {ResumeApi.map((val, id) => {
                       if(val.category === "education") {
@@ -26,10 +26,10 @@ const ResumeMarco = () => {
                 </div>
              </section>
              <section className="resume__content__left">
-                <div className="heading">
+                {/* <div className="heading">
                    <h4>YEARS</h4>
                    <h5>Experience</h5>
-                </div>
+                </div> */}
                 <div className="content">
                    {ResumeApi.map((val, id) => {
                       if(val.category === "experience") {

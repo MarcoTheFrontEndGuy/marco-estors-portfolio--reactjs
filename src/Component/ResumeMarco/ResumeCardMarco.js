@@ -10,9 +10,9 @@ const ResumeCardMarco = (props) => {
           <h4 className="resumeCard__header__title__h4">{props.title}</h4>
           <span>{props.year}</span>
         </div>
-        <div className="resumeCard__header__rate">
-          <button className="resumeCard__header__rate__button">{props.rate}</button>
-        </div>
+        {/* <div className="resumeCard__header__rate"> */}
+          {/* <button className="resumeCard__header__rate__button">{props.rate}</button> */}
+        {/* </div> */}
       </header>
       <hr />
       <p className="resumeCard__description">{props.desc}</p>
