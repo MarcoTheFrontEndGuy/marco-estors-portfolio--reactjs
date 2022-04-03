@@ -29,14 +29,24 @@ const PortfolioComponent = () => {
       </header>
       <div className="portfolio__projects">
 
-      {data?.map((eachelement, index) => {
+      {/* {data?.map((eachelement, index) => {
          if(index === 0) {
             console.log('this is the one that people built from scratch');
             return <PortfolioCard1 title={eachelement.title} image={eachelement.image} />
          } else {
             return <PortfolioCard title={eachelement.title} image={eachelement.image} />
          }
+      })} */}
+
+      {data?.map((eachelement, index) => {
+         if(index === 0 || index === 2 || index === 4) {
+            console.log('this is the one that people built from scratch');
+            return <PortfolioCard1 title={eachelement.title} image={eachelement.image} />
+         } else {
+            return <PortfolioCard title={eachelement.title} image={eachelement.image} />
+         }
       })}
+
 
       </div>
    </section>

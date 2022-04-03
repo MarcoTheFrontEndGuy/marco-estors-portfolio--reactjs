@@ -8,12 +8,12 @@ const ResumeMarco = () => {
     <section className="resume" id="resume">
           <header className="resume__header">
              <h2 className="resume__header__h2">My Resume</h2>
-             <h3 className="resume__header__h3">7+ YEARS OF EXPERIENCE</h3>
+             {/* <h3 className="resume__header__h3">7+ YEARS OF EXPERIENCE</h3> */}
           </header>
           <div className="resume__content">
              <section className="resume__content__left">
                 <div className="heading">
-                   <h4>2007-2010</h4>
+                   <h4>YEARS</h4>
                    <h5>Education</h5>
                 </div>
                 <div className="content">
@@ -27,7 +27,7 @@ const ResumeMarco = () => {
              </section>
              <section className="resume__content__left">
                 <div className="heading">
-                   <h4>2007-2010</h4>
+                   <h4>YEARS</h4>
                    <h5>Experience</h5>
                 </div>
                 <div className="content">

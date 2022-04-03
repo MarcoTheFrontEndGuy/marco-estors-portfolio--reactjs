@@ -8,41 +8,30 @@ const ContactMarco = () => {
        <header className="contact__header">
           <h2>CONTACT ME</h2>
        </header>
-       <div className="contact__left">
-          <img src={contact1} alt="this is an image" />
-          <div className="contact__social" >
-            <a href="https://www.paradise.com" alt="_blank" className="contact_social__icon" >
-               <FaGithub />
-            </a>
-            <a className="contact_social__icon" >
-               <FaLinkedin />
-            </a>
-            <a className="contact_social__icon" >
-               <FaYahoo />
-            </a>
-          
-          </div>
-        
-       </div>
-       <div className="contact__right">
-          <form action="">
-             <label htmlFor="" className="form__label-inline">NAME:
-                <input type="text" />
-             </label>
+       <div className="contact__content">
+         <div className="contact__left">
+            <img className="contact__left__bigImageForm" src={contact1} alt="this is an image" />
+         </div>
+         <div className="contact__right">
+            <form action="">
+               <label htmlFor="" className="form__label-inline">NAME:
+                  <input type="text" />
+               </label>
 
-             <label htmlFor="" className="form__label-inline">PHONE
-                <input type="text" />
-             </label>
+               <label htmlFor="" className="form__label-inline">PHONE
+                  <input type="text" />
+               </label>
 
-             <label htmlFor="" className="form__label-block">EMAIL
-                <input type="text" />
-             </label>
-            
-             <label htmlFor="" className="form__label-block">GET IN TOUCH
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-            </label>
-            <button type="submit">SEND MESSAGE</button>
-           </form>
+               <label htmlFor="" className="form__label-block">EMAIL
+                  <input type="text" />
+               </label>
+               
+               <label htmlFor="" className="form__label-block">GET IN TOUCH
+                  <textarea name="" id="" cols="5" rows="7"></textarea>
+               </label>
+               <button className="contact__right__button-submit" type="submit">SEND MESSAGE</button>
+            </form>
+         </div>
        </div>
     </section>
   )

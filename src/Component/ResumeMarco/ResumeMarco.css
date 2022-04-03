@@ -17,6 +17,7 @@
    margin-top: 10vh;
    display: grid;
    grid-template-columns: repeat(2, 1fr);
+   /* grid-template-columns: 1fr; */
    gap: 20px;
    max-width: 100%;
 }
@@ -33,9 +34,15 @@
    margin: 40px 0;
    box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
    transition: transform .3s;
+   border: 10px solid #ebf0f3;
+   position: relative;
+   overflow: hidden;
+   z-index: 10;
 } */
 
 
+/* ##############################################  */
+/* ##############################################  */
 .resumeCard {
    padding: 20px;
    background: #ebf0f3;
@@ -44,29 +51,40 @@
    margin: 40px 0;
    box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
    transition: transform .3s;
-   border: 10px solid #ebf0f3;
+   border-radius: 8px;
+   border: 25px solid #ebf0f3;
+   position: relative;
+   overflow: hidden;
+   z-index: 10;
 }
 
 
+/* ##############################################  */
+/* ##############################################  */
+/* ##############################################  */
 
-
-
+/* 
 .resumeCard:hover {
-   /* background: #5A93B9; */
-   /* border-color: #4AC3FF; */
-   /* border-color: #5A93B9; */
-
    animation: scaleCourseCard .5s ease-in-out;
+} */
+
+/* ##############################################  */
+/* ##############################################  */
+/* ##############################################  */
+.resumeCard:hover {
+   animation: scaleCourseCard .5s ease-in-out;
+   border-color: #5a93b9;
 }
+
+/* ##############################################  */
+/* ##############################################  */
+/* ##############################################  */
 
 .resumeCard__description {
    color: rgb(0, 0, 0);
    transition: 0s;
 }
 
-/* .resumeCard:hover .resumeCard__description {
-   color: #fff;
-} */
 
 @keyframes scaleCourseCard {
    0% {
@@ -102,7 +120,9 @@
    font-family: serif;
    border-bottom: 3px solid black;
    margin-bottom: 10px;
+
 }
+
 
 .resumeCard:hover .resumeCard__header__title__h4 {
    /* color: #4AC3FF; */
