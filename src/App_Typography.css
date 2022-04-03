@@ -86,7 +86,8 @@ small, .text_small { font-size: 0.75rem;
 
 
 .resume__header__h2 {
-   margin-top: 80px;
+   /* margin-top: 80px; */
+   margin-top: 40px;
 }
 
 @media (max-width: 1111px) {

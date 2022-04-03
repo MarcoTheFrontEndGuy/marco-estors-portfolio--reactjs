@@ -5,6 +5,25 @@
    margin-top: 12.70vh;
    display: flex;
    flex-direction: column;
+
+   /* testing-big I want to show my resume section on click and open like a popup 
+   taking 100vw 100vh overflow hidden */
+   width: 100vw;
+   height: 100vh;
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 9999;
+   /* background-color: black; */
+   overflow-y: scroll;
+   margin-top: 0;
+   padding-top: 0px;
+   
+   /* testing-big I want to show my resume section on click and open like a popup 
+   taking 100vw 100vh overflow hidden */
+
+
+
 }
 
 .resume__header {
@@ -24,26 +43,12 @@
 
 .resume__header__h2 {
    font-size: 40px;
+   border-bottom: 10px solid #5a93b9;
 }
 
+
+
 /* .resumeCard {
-   padding: 20px;
-   background: #ebf0f3;
-   color: #000000;
-   border-radius: 6px;
-   margin: 40px 0;
-   box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
-   transition: transform .3s;
-   border: 10px solid #ebf0f3;
-   position: relative;
-   overflow: hidden;
-   z-index: 10;
-} */
-
-
-/* ##############################################  */
-/* ##############################################  */
-.resumeCard {
    padding: 20px;
    background: #ebf0f3;
    color: #000000;
@@ -59,26 +64,39 @@
 }
 
 
-/* ##############################################  */
-/* ##############################################  */
-/* ##############################################  */
-
-/* 
-.resumeCard:hover {
-   animation: scaleCourseCard .5s ease-in-out;
-} */
-
-/* ##############################################  */
-/* ##############################################  */
-/* ##############################################  */
 .resumeCard:hover {
    animation: scaleCourseCard .5s ease-in-out;
    border-color: #5a93b9;
-}
+} */
+/* ===========================================  */
+/* ===========================================  */
+/* ===========================================  */
 
-/* ##############################################  */
-/* ##############################################  */
-/* ##############################################  */
+.resumeCard {
+   /* padding: 20px; */
+   /* background: #ebf0f3; */
+   color: #000000;
+   border-radius: 6px;
+   /* margin: 40px 0; */
+   /* box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff; */
+   transition: transform .3s;
+   /* border-radius: 8px; */
+   border: 25px solid transparent;
+   position: relative;
+   overflow: hidden;
+   z-index: 10;
+}
+.resumeCard:hover {
+   box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
+   border-radius: 8px;
+   background: #ebf0f3;
+   border: 25px solid #ebf0f3;
+   /* animation: scaleCourseCard .5s ease-in-out; */
+   /* border-color: #5a93b9; */
+}
+/* ===========================================  */
+/* ===========================================  */
+/* ===========================================  */
 
 .resumeCard__description {
    color: rgb(0, 0, 0);
